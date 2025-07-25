@@ -1,6 +1,9 @@
+//Para as alterações no SCSS vão para o css rode no terminal: npm run observar
 //variaveis
 $teste: rgb(36, 36, 87);
+$outroTeste: rgb(240, 236, 236);
 
 body {
   background-color: $teste;
+  color: $outroTeste;
 }
