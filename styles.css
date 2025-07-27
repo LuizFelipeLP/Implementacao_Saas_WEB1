@@ -31,4 +31,14 @@ body {
   color: #2c3e50;
 }
 
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #ecf0f1;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */
