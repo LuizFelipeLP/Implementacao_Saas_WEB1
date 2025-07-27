@@ -1,29 +1,17 @@
-//Para as alterações no SCSS vão para o css rode no terminal: npm run observar
-//variaveis
-$teste: rgb(36, 36, 87);
-$outroTeste: rgb(240, 236, 236);
-
+//Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
+@import "variaveis";
+@import "mixins";
 body {
   background-color: $teste;
   color: $outroTeste;
 }
-//Para as alterações no SCSS vão para o css rode no terminal: npm run observar
-//variaveis
-$cor-primaria: #2c3e50;
-$cor-secundaria: #ecf0f1;
-$fonte: 'Arial', sans-serif;
-$outroTeste: rgb(240, 236, 236);
+//Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
 
 body {
   background-size: cover;
   font-family: $fonte;
 }
-@mixin centralizar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 .biblioteca {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
