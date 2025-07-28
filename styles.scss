@@ -4,7 +4,7 @@
 @import "funcoes";
 
 body {
-  background-color: /*cor-fundo(*/$fundo;
+  background-color: cor-fundo($fundo);
   color: $texto-fora-da-div;
   background-size: cover;
   font-family: $fonte;
