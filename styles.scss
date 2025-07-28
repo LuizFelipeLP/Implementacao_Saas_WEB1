@@ -9,6 +9,11 @@ body {
   font-family: $fonte;
 }
 
+.cabecalho {
+  @include centralizar;
+  flex-direction: column;
+}
+
 //Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
 
 
