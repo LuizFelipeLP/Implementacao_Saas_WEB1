@@ -258,7 +258,7 @@ body {
     flex-direction: column;
     background-color: $cor-rodape; // Uso de variável para cor do rodapé
     padding: 20px;
-
+ 
     .imagensRodape { // Aninhamento de seletores
         display: flex;
         gap: 16px;
