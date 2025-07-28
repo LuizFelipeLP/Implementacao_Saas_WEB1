@@ -27,14 +27,17 @@ body {
   padding: 15px;
   border-radius: 10px;
 }
+
 .livro img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
+
 .livro h2 {
   color: #ff00a6;
 }
+
 .livro p {
   color: #000000;
 }
@@ -48,19 +51,21 @@ body {
   background-color: rgb(36, 36, 87);
   padding: 20px;
 }
+
 .rodape .imagensRodape {
   display: flex;
   gap: 16px;
   justify-content: center;
   margin-top: 10px;
 }
+
 .rodape .imagensRodape img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border: 2px solid #ff00a6;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
