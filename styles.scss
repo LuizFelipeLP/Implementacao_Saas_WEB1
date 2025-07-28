@@ -1,9 +1,10 @@
 //Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
 @import "variaveis";
 @import "mixins";
+@import "funcoes";
 
 body {
-  background-color: $fundo;
+  background-color: /*cor-fundo(*/$fundo;
   color: $texto-fora-da-div;
   background-size: cover;
   font-family: $fonte;

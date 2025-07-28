@@ -1,0 +1,3 @@
+@function cor-fundo($cor) {
+  @return darken($cor, 5%);
+}
