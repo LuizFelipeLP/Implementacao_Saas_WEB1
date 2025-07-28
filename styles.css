@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(238, 255, 0);
-  color: rgb(240, 236, 236);
+  background-color: rgb(36, 36, 87);
+  color: rgb(173, 197, 209);
   background-size: cover;
   font-family: "Arial", sans-serif;
 }
@@ -25,7 +25,7 @@ body {
   border-radius: 5px;
 }
 .livro h2 {
-  color: #2c3e50;
+  color: #ff00a6;
 }
 .livro p {
   color: #000000;
@@ -37,6 +37,6 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-color: #ecf0f1;
+  background-color: rgb(36, 36, 87);
   padding: 20px;
 }/*# sourceMappingURL=styles.css.map */

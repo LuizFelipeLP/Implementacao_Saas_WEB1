@@ -3,8 +3,8 @@
 @import "mixins";
 
 body {
-  background-color: $teste;
-  color: $outroTeste;
+  background-color: $fundo;
+  color: $texto-fora-da-div;
   background-size: cover;
   font-family: $fonte;
 }
@@ -34,7 +34,7 @@ body {
   }
 
   h2 {
-    color: $cor-primaria;
+    color: $cor-texto-dentro-da-div;
   }
 
   p {
@@ -45,6 +45,6 @@ body {
 .rodape {
   @include centralizar;
   flex-direction: column;
-  background-color: $cor-secundaria;
+  background-color: $cor-rodape;
   padding: 20px;
 }
