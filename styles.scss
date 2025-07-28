@@ -14,10 +14,6 @@ body {
   flex-direction: column;
 }
 
-//Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
-
-
-
 .biblioteca {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

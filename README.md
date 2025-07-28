@@ -8,9 +8,7 @@ Ao final deste tutorial, você terá uma página web com um cabeçalho, uma seç
 💻 Instalação dos Softwares Necessários
 Para desenvolver este projeto, você precisará dos seguintes softwares:
 
-Editor de Texto/IDE (Ambiente de Desenvolvimento Integrado):
-
-Sugestão: Visual Studio Code (VS Code)
+Editor de Texto/IDE - Visual Studio Code (VS Code)
 
 Por que: É um editor leve, gratuito e com uma vasta gama de extensões que facilitam o desenvolvimento web, incluindo suporte a SCSS.
 
@@ -42,20 +40,17 @@ Por que: É a ferramenta essencial para compilar seus arquivos .scss para .css.
 
 Instalação (via Terminal/Prompt de Comando):
 
-Abra o terminal ou prompt de comando (no Windows, pode ser o PowerShell ou CMD).
+Abra o terminal ou prompt de comando (no VS CODE).
 
 Execute o seguinte comando para instalar o Sass globalmente:
-
-Bash
-
-npm install -g sass
-Isso permitirá que você use o comando sass em qualquer diretório.
+npm run observar
+Isso permitirá que você veja comando sass em qualquer diretório.
 
 🚀 Passo a Passo para o Desenvolvimento
 Siga estes passos para recriar o projeto:
 
 1. Estrutura do Projeto
-Crie uma pasta para o seu projeto e dentro dela, as seguintes subpastas e arquivos:
+Criamos uma pasta para o projeto e dentro dela, as seguintes subpastas e arquivos:
 
 seu-projeto/
 ├── imagens/
@@ -75,16 +70,16 @@ seu-projeto/
 └── styles.css (Será gerado automaticamente pelo Sass)
 imagens/: Guardará todas as imagens usadas na página. Certifique-se de ter essas imagens em sua pasta para que o projeto funcione corretamente.
 
-index.html: O arquivo HTML principal da sua página.
+index.html: O arquivo HTML principal da página.
 
 scss/: Uma pasta para organizar arquivos SCSS parciais. Neste caso, variaveis.scss.
 
-styles.scss: O arquivo SCSS principal onde você escreverá a maioria dos seus estilos.
+styles.scss: O arquivo SCSS principal onde está a maioria dos seus estilos.
 
 styles.css: Este arquivo não deve ser criado manualmente. Ele será gerado pelo compilador Sass a partir do styles.scss.
 
 2. Criando o index.html
-Cole o código HTML fornecido no seu arquivo index.html. Este arquivo define a estrutura da página, incluindo o cabeçalho, a seção de livros e o rodapé.
+Este arquivo define a estrutura da página, incluindo o cabeçalho, a seção de livros e o rodapé.
 
 HTML
 
@@ -296,12 +291,8 @@ Abra o terminal (ou prompt de comando) na raiz do seu projeto (na mesma pasta on
 
 Execute o seguinte comando para que o Sass observe as mudanças no styles.scss e o compile automaticamente para styles.css a cada alteração:
 
-Bash
-
-sass --watch styles.scss:styles.css
-sass: O comando para o compilador Sass.
-
---watch: Indica ao Sass para "observar" o arquivo de origem e recompilá-lo a cada alteração.
+npm run observar
+Indica ao Sass para "observar" o arquivo de origem e recompilá-lo a cada alteração.
 
 styles.scss: O arquivo de origem SCSS.
 
@@ -310,59 +301,7 @@ styles.css: O arquivo de destino CSS que será gerado.
 Você verá uma mensagem no terminal indicando que o Sass está observando os arquivos. Mantenha este terminal aberto enquanto estiver desenvolvendo.
 
 6. Visualizando o Projeto
-Com o sass --watch em execução e as imagens na pasta imagens/, você pode abrir o index.html no seu navegador.
+Com o sass npm run observar em execução e as imagens na pasta imagens/, você pode abrir o index.html no seu navegador.
 
 Se estiver usando o VS Code, clique com o botão direito no arquivo index.html e selecione "Open with Live Server". Isso abrirá a página em seu navegador e atualizará automaticamente a cada modificação.
 
-📸 Imagens para Ilustrar o Processo
-Aqui estão sugestões de capturas de tela que você pode incluir no seu README.md para ilustrar o processo e os resultados:
-
-Estrutura de Pastas no VS Code:
-
-Uma imagem mostrando a organização das pastas e arquivos (imagens, scss, index.html, styles.scss, styles.css) no explorador de arquivos do VS Code.
-
-Exemplo:
-
-[Imagem da estrutura de pastas no VS Code]
-Conteúdo do _variaveis.scss:
-
-Uma captura da tela do VS Code mostrando o conteúdo do arquivo scss/_variaveis.scss.
-
-Exemplo:
-
-[Imagem do código de _variaveis.scss]
-Conteúdo do styles.scss:
-
-Uma captura da tela do VS Code mostrando uma parte do arquivo styles.scss com exemplos de aninhamento e uso de variáveis.
-
-Exemplo:
-
-[Imagem do código de styles.scss (com ênfase no aninhamento ou variáveis)]
-Terminal com sass --watch em execução:
-
-Uma imagem do terminal ou prompt de comando mostrando a mensagem de "Watching for changes..." do comando sass --watch.
-
-Exemplo:
-
-[Imagem do terminal com 'sass --watch' rodando]
-Página Principal Estilizada (Resultado Final):
-
-Uma imagem da sua página index.html aberta no navegador, mostrando o layout completo com cabeçalho, os livros e o rodapé.
-
-Exemplo:
-
-[Imagem da página web final com os estilos aplicados]
-Detalhe da Seção de Livros:
-
-Uma imagem focando na seção dos livros, mostrando como eles estão organizados em um grid responsivo.
-
-Exemplo:
-
-[Imagem detalhada da seção 'biblioteca' com os livros]
-Detalhe do Rodapé:
-
-Uma imagem destacando o rodapé com as fotos e nomes dos integrantes.
-
-Exemplo:
-
-[Imagem detalhada do rodapé]
