@@ -1,16 +1,17 @@
 //Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
 @import "variaveis";
 @import "mixins";
+
 body {
   background-color: $teste;
   color: $outroTeste;
-}
-//Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
-
-body {
   background-size: cover;
   font-family: $fonte;
 }
+
+//Para que as alterações no SCSS vão para o css rode no terminal: npm run observar
+
+
 
 .biblioteca {
   display: grid;
@@ -19,20 +20,28 @@ body {
   padding: 20px;
   margin: auto;
 }
+
 .livro {
   background-color: white;
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 10px;
+
   img {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
+
   h2 {
     color: $cor-primaria;
   }
+
+  p {
+    color: $cor-texto;
+  }
 }
+
 .rodape {
   @include centralizar;
   flex-direction: column;
