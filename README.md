@@ -1,71 +1,63 @@
-Implementacao_Sass_WEB1
-🚀 Visão Geral do Projeto
-Este projeto demonstra a aplicação prática do SCSS (Sass) para estilizar uma página web simples dedicada à exibição de livros. Nosso principal objetivo é ilustrar como o SCSS, um pré-processador CSS poderoso, pode otimizar o fluxo de trabalho de desenvolvimento web, promovendo código mais organizado, reusável e fácil de manter através de recursos como variáveis, aninhamento de seletores e compilação automatizada para CSS puro.
+📚 Implementacao_Sass_WEB1: Estilizando uma Página de Livros com SCSS
+🎯 Problema/Objetivo
+O desenvolvimento de interfaces web frequentemente esbarra na complexidade e repetitividade do CSS puro, especialmente em projetos de maior escala. Gerenciar um volume crescente de estilos pode levar a arquivos CSS extensos, difíceis de manter e propensos a duplicação de código.
 
-Ao final deste tutorial, você terá uma página web visualmente atraente, com um cabeçalho dinâmico, uma seção de livros estilizada com um layout responsivo e um rodapé informativo com os integrantes do projeto.
+Este mini projeto visa resolver esse problema, demonstrando a aplicação prática do SCSS (Sass) como uma solução eficiente para otimizar e organizar a estilização de páginas web. Nosso principal objetivo é:
 
-🛠️ Tecnologias Utilizadas
-Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+Ilustrar as funcionalidades-chave do SCSS: Focaremos no uso de variáveis para padronização, aninhamento de seletores para melhor legibilidade e organização, e o processo de compilação automatizada para CSS.
 
-HTML5: Para a estruturação semântica do conteúdo da página.
+Desenvolver uma página de livros responsiva: Criaremos uma interface simples e funcional para exibir uma coleção de livros, aplicando os conceitos do SCSS para garantir um design coeso e adaptável a diferentes tamanhos de tela.
 
-SCSS (Sass): Como pré-processador CSS para uma estilização mais avançada e organizada.
+Ao final deste tutorial, você compreenderá como o SCSS pode transformar seu fluxo de trabalho, resultando em um código de estilo mais limpo, modular e fácil de manter.
 
-CSS3: O resultado final da compilação do SCSS, aplicado ao HTML.
+🧪 Material e Métodos Utilizados para o Desenvolvimento
+Para a implementação deste projeto, utilizamos uma abordagem passo a passo, seguindo as melhores práticas de desenvolvimento front-end com ênfase na utilização do SCSS.
 
-Node.js e npm: Para gerenciar as dependências do projeto e rodar o compilador Sass.
+🛠️ Tecnologias e Ferramentas
+Ferramenta	Descrição
+HTML5	Linguagem de marcação para estruturar o conteúdo da página, garantindo semântica e acessibilidade.
+SCSS (Sass)	Pré-processador CSS essencial para escrever estilos de forma mais organizada e dinâmica.
+CSS3	Linguagem de estilo que os navegadores interpretam. O styles.css é gerado a partir do styles.scss.
+Node.js e npm	Ambiente de execução e gerenciador de pacotes para instalar e operar o compilador Sass.
+Visual Studio Code (VS Code)	Editor de código principal, escolhido por sua leveza, extensibilidade e suporte integrado.
+Live Server (Extensão VS Code)	Permite pré-visualizar as alterações no navegador em tempo real, agilizando o desenvolvimento.
 
-Visual Studio Code (VS Code): Editor de código principal.
-
-Live Server (Extensão VS Code): Para visualização em tempo real das alterações no navegador.
-
+Exportar para as Planilhas
 💻 Instalação e Configuração do Ambiente
-Para replicar e desenvolver neste projeto, siga os passos de instalação e configuração abaixo:
+Siga estes passos para configurar seu ambiente de desenvolvimento:
 
-1. Editor de Texto/IDE
-Ferramenta: Visual Studio Code (VS Code)
+Instale o Visual Studio Code (VS Code)
 
-Motivo: É um editor de código leve, gratuito e altamente extensível, oferecendo excelente suporte para desenvolvimento web, incluindo SCSS.
+Motivo: Um editor de código robusto e gratuito com vasta gama de extensões.
 
-Instalação: Baixe o instalador diretamente do site oficial do VS Code e siga as instruções para o seu sistema operacional.
+Como: Baixe o instalador no site oficial e siga as instruções de instalação.
 
-2. Node.js e npm (Node Package Manager)
-Motivo: O Sass é distribuído como um pacote npm. A instalação do Node.js já inclui o npm, que é essencial para instalar e gerenciar o compilador Sass.
+Instale Node.js e npm
 
-Instalação: Faça o download do instalador da versão LTS (Long Term Support) no site oficial do Node.js. Execute o instalador e siga as etapas. Verifique a instalação abrindo o terminal e digitando node -v e npm -v.
+Motivo: Necessário para instalar o compilador Sass via npm.
 
-3. Extensão Live Server (para VS Code)
-Motivo: Essa extensão permite que você visualize as mudanças no navegador em tempo real enquanto edita seu código, sem a necessidade de recarregar a página manualmente.
+Como: Faça o download da versão LTS (Long Term Support) no site oficial do Node.js. O npm é incluído na instalação. Verifique a instalação abrindo seu terminal e digitando node -v e npm -v.
 
-Instalação (no VS Code):
+Instale a Extensão Live Server no VS Code
 
-Abra o VS Code.
+Motivo: Permite recarregamento automático do navegador ao salvar alterações.
 
-Vá para a aba de Extensões (ícone de quatro quadrados no menu lateral esquerdo ou use o atalho Ctrl+Shift+X).
+Como: Abra o VS Code, vá para a aba Extensões (Ctrl+Shift+X), procure por "Live Server" (Autor: Ritwick Dey) e clique em Install.
 
-Na barra de pesquisa, digite "Live Server" e selecione a extensão do Ritwick Dey.
+Instale Sass via npm
 
-Clique no botão "Install".
+Motivo: O compilador que transformará seus arquivos .scss em .css.
 
-4. Sass (via npm)
-Motivo: O Sass é o compilador que transforma seus arquivos .scss em CSS padrão, que é o que o navegador entende.
+Como: Abra o terminal integrado do VS Code (Ctrl+' ou View > Terminal) ou o terminal do seu sistema operacional e execute:
+npm run observar
 
-Instalação (via Terminal/Prompt de Comando):
-
-Abra o terminal integrado do VS Code (Ctrl+' ou View > Terminal) ou o terminal do seu sistema operacional.
-
-Execute o seguinte comando para instalar o Sass globalmente:
-
-Bash
-
-npm install -g sass
-Este comando tornará o comando sass disponível em qualquer diretório do seu sistema.
+Este comando instala o Sass globalmente, permitindo que você use o comando sass em qualquer diretório.
 
 🚀 Passo a Passo para o Desenvolvimento
-Siga as etapas abaixo para configurar e desenvolver o mini projeto.
+Com o ambiente configurado, vamos ao desenvolvimento do projeto:
 
 1. Estrutura do Projeto
-Comece criando a seguinte estrutura de diretórios e arquivos em seu ambiente de desenvolvimento:
+Crie a seguinte estrutura de arquivos e diretórios na raiz do seu projeto:
 
 seu-projeto/
 ├── imagens/
@@ -79,22 +71,24 @@ seu-projeto/
 │   ├── jacson.png
 │   └── marelo.png
 ├── scss/
-│   └── _variaveis.scss  (O underline indica um parcial Sass)
+│   └── _variaveis.scss  (Partial SCSS)
 ├── index.html
 ├── styles.scss
-└── styles.css           (Gerado automaticamente pelo Sass)
-imagens/: Contém todas as imagens usadas no projeto, como capas de livros e fotos dos integrantes. Certifique-se de que todas as imagens referenciadas no index.html e no CSS estejam presentes aqui.
+└── styles.css           (Gerado pelo Sass)
+imagens/: Contém todos os recursos visuais (capas de livros, fotos de perfil).
 
-scss/: Esta pasta é dedicada aos arquivos parciais SCSS. O _variaveis.scss é um exemplo de parcial, contendo variáveis globais de estilo.
+scss/: Diretório para arquivos SCSS parciais.
 
-index.html: O arquivo principal da página web, que carrega a estrutura HTML e referencia o styles.css compilado.
+_variaveis.scss: Armazena variáveis de cor, fonte, etc., para reutilização.
 
-styles.scss: O arquivo SCSS principal onde você escreverá a lógica de estilização, importando parciais e utilizando os recursos do Sass.
+index.html: O esqueleto HTML principal da página.
 
-styles.css: Este arquivo não deve ser criado ou editado manualmente. Ele é o resultado da compilação do styles.scss pelo Sass.
+styles.scss: O arquivo SCSS principal onde a lógica de estilização será escrita.
+
+styles.css: O arquivo CSS de saída, gerado automaticamente pelo compilador Sass. Não edite este arquivo manualmente.
 
 2. Criando o index.html
-Cole o código HTML fornecido no seu arquivo index.html. Este arquivo estabelece a estrutura fundamental da sua página, dividindo-a em cabeçalho, a seção principal de livros e o rodapé.
+Cole o código HTML abaixo no seu arquivo index.html. Ele define a estrutura da página, incluindo cabeçalho, a seção da biblioteca de livros e o rodapé.
 
 HTML
 
@@ -167,10 +161,32 @@ HTML
             </p>
         </div>
     </div>
-    
+    <div class="rodape">
+        <div class="imagensRodape">
+            <div class="integrante">
+                <img src="imagens/marelo.png" alt="Gustavo">
+                <span>GUSTAVO RODRIGUES MOREIRA</span>
+            </div>
+            <div class="integrante">
+                <img src="imagens/jacson.png" alt="Jacson">
+                <span>JACSON FRANCISCO VIANA SANTOS</span>
+            </div>
+            <div class="integrante">
+                <img src="imagens/alissin.png" alt="Alisson">
+                <span>ALISSON RICADY MORAIS GUIMÃRAES</span>
+            </div>
+            <div class="integrante">
+                <img src="imagens/GALAS.PNG" alt="Felipe">
+                <span>FELIPE PEREIRA DE LIMA</span>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
+
 3. Definindo Variáveis com scss/_variaveis.scss
-Crie o arquivo _variaveis.scss dentro da pasta scss/. Este arquivo, identificado pelo underline inicial, é um parcial Sass e não será compilado diretamente para CSS. Ele serve para centralizar a definição de valores reutilizáveis, como cores e fontes, facilitando a consistência e manutenção do design.
+Crie o arquivo _variaveis.scss dentro da pasta scss/. Este parcial Sass centraliza a definição de valores reutilizáveis, como cores e fontes, facilitando a consistência e manutenção.
 
 SCSS
 
@@ -181,8 +197,9 @@ $cor-texto-dentro-da-div: #ff00a6;
 $cor-rodape: rgb(36, 36, 87);
 $cor-texto: #000000;
 $fonte: 'Arial', sans-serif;
+
 4. Escrevendo os Estilos com styles.scss
-Agora, no arquivo styles.scss, importe o parcial de variáveis e escreva os estilos da sua página utilizando a sintaxe SCSS. Observe como o SCSS permite aninhar seletores e usar variáveis para tornar o código mais limpo e legível.
+No arquivo styles.scss, você importará as variáveis e escreverá os estilos, aproveitando os recursos do SCSS.
 
 SCSS
 
@@ -272,72 +289,56 @@ body {
         }
     }
 }
-Observações sobre o SCSS:
+Principais Características do SCSS Utilizadas:
 
-@import 'scss/variaveis';: Esta linha é fundamental para importar as variáveis definidas no arquivo _variaveis.scss, tornando-as acessíveis em todo o styles.scss.
+@import 'scss/variaveis';: Modulariza o código, importando o arquivo de variáveis.
 
-Aninhamento de Seletores: Observe como seletores como .livro e .imagensRodape são aninhados dentro de seus pais (.biblioteca e .rodape respectivamente). Isso simula a hierarquia do HTML e torna o código CSS mais organizado e legível, eliminando a repetição de seletores.
+Aninhamento de Seletores: Reflete a estrutura HTML, tornando o CSS mais legível e reduzindo a repetição. Por exemplo, .biblioteca .livro é aninhado como .biblioteca { .livro { ... } }.
 
-Uso de Variáveis: As variáveis (prefixadas com $) permitem que você defina valores de cores, fontes e outros atributos em um único lugar e os reutilize em toda a folha de estilo. Isso facilita muito a manutenção e a padronização visual.
+Variáveis ($): Centralizam valores como cores ($fundo, $cor-texto-dentro-da-div) e fontes ($fonte), facilitando alterações globais e garantindo consistência visual.
 
-Pseudoclasses Aninhadas: Exemplo de :hover aninhado diretamente dentro do seletor img, aplicando um efeito de transição ao passar o mouse.
+Pseudoclasses Aninhadas (&:hover): Permite aplicar estilos de estado (:hover, :focus) diretamente dentro do seletor do elemento, mantendo a coesão do código.
 
 5. Compilando o SCSS para CSS
-Para que o navegador entenda seus estilos SCSS, eles precisam ser compilados para CSS puro. Use o comando sass --watch para automatizar este processo.
+Para que o navegador interprete seus estilos SCSS, eles devem ser compilados para CSS. Utilize o comando sass --watch para automatizar este processo em tempo real.
 
-Abra o terminal integrado do VS Code (Ctrl+') ou o prompt de comando/terminal na raiz do seu projeto (onde estão index.html e styles.scss).
+Abra o terminal (integrado no VS Code ou do seu sistema) na raiz do seu projeto.
 
-Execute o seguinte comando:
+Execute o comando:
 
-Bash
+npm run observar
+Monitora o styles.scss para alterações e recompila automaticamente.
 
-sass --watch styles.scss:styles.css
-sass: Invoca o compilador Sass.
+styles.scss: Arquivo SCSS de entrada.
 
---watch: Instrução para o Sass monitorar o styles.scss em busca de alterações e recompilá-lo automaticamente sempre que uma modificação for salva.
+styles.css: Arquivo CSS de saída, gerado e atualizado.
 
-styles.scss: O arquivo SCSS de origem.
-
-styles.css: O arquivo CSS de destino que será gerado e atualizado.
-
-Você verá uma mensagem no terminal indicando que o Sass está "observando" os arquivos. Mantenha este terminal aberto enquanto estiver desenvolvendo para que as compilações aconteçam em tempo real.
+Mantenha este terminal aberto enquanto estiver desenvolvendo.
 
 6. Visualizando o Projeto
-Com o comando sass --watch em execução e as imagens devidamente posicionadas na pasta imagens/, você pode visualizar sua página no navegador.
+Com o comando npm run observar ativo e todas as imagens na pasta imagens/, visualize sua página:
 
-No VS Code, clique com o botão direito no arquivo index.html e selecione "Open with Live Server".
+No VS Code, clique com o botão direito no index.html e selecione "Open with Live Server".
 
-Isso abrirá a página em seu navegador padrão e a manterá atualizada automaticamente a cada alteração salva nos seus arquivos SCSS ou HTML.
+Isso abrirá a página em seu navegador e a manterá atualizada automaticamente.
 
-📸 Capturas de Tela (Resultados e Processo)
-Para ilustrar o projeto e o processo de desenvolvimento, considere adicionar as seguintes capturas de tela ao seu README.md:
+✅ Resultados Alcançados
+O projeto final demonstra com sucesso a aplicação de SCSS para criar uma página de livros responsiva e bem estilizada. As principais características e resultados incluem:
 
-Estrutura de Pastas no VS Code: Uma imagem mostrando a organização dos arquivos e diretórios do projeto no explorador de arquivos do VS Code.
-*
+Estilização Consistente: O uso de variáveis SCSS garantiu que cores e fontes fossem aplicadas de forma uniforme em toda a página, facilitando a padronização visual.
 
-Conteúdo do _variaveis.scss: Uma captura de tela exibindo o código do arquivo scss/_variaveis.scss, destacando as variáveis definidas.
-*
+Código CSS Organizado e Legível: O aninhamento de seletores no SCSS resultou em uma estrutura de código que reflete diretamente a hierarquia do HTML, tornando-o mais intuitivo e fácil de ler e manter.
 
-Trecho do styles.scss (Aninhamento/Variáveis): Uma imagem mostrando um trecho do styles.scss que demonstre o uso de aninhamento de seletores e variáveis.
-*
+Manutenibilidade Aprimorada: Alterações em cores ou fontes são feitas em um único local (_variaveis.scss), propagando-se por todo o projeto, o que é um grande ganho em projetos maiores.
 
-Terminal com sass --watch: Uma captura da tela do terminal ou prompt de comando mostrando o comando sass --watch em execução.
-*
+Layout Responsivo da Biblioteca: A seção de livros utiliza display: grid com repeat(auto-fit, minmax(300px, 1fr)), garantindo que os livros se ajustem dinamicamente ao tamanho da tela, proporcionando uma excelente experiência em dispositivos móveis e desktops.
 
-Página Final - Visão Geral: Uma imagem da página index.html completamente estilizada, aberta no navegador, mostrando o layout geral.
-*
-
-Página Final - Detalhe da Seção de Livros: Uma captura focando na seção biblioteca, destacando como os livros são exibidos em um layout responsivo.
-*
-
-Página Final - Detalhe do Rodapé: Uma imagem que exiba o rodapé com as fotos e nomes dos integrantes do projeto.
-*
+Efeitos Interativos Simples: O uso de pseudoclasses aninhadas (ex: :hover nas imagens do rodapé) adiciona uma camada de interatividade visual sem complicação.
 
 👨‍💻 Desenvolvedores
+Este projeto foi desenvolvido por:
+
 GUSTAVO RODRIGUES MOREIRA
-
 JACSON FRANCISCO VIANA SANTOS
-
 ALISSON RICADY MORAIS GUIMÃRAES
-
 FELIPE PEREIRA DE LIMA
