@@ -52,4 +52,21 @@ body {
   flex-direction: column;
   background-color: $cor-rodape;
   padding: 20px;
+
+  .imagensRodape {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid $cor-texto-dentro-da-div;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+  }
 }
