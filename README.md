@@ -167,28 +167,7 @@ HTML
             </p>
         </div>
     </div>
-    <div class="rodape">
-        <div class="imagensRodape">
-            <div class="integrante">
-                <img src="imagens/marelo.png" alt="Gustavo">
-                <span>GUSTAVO RODRIGUES MOREIRA</span>
-            </div>
-            <div class="integrante">
-                <img src="imagens/jacson.png" alt="Jacson">
-                <span>JACSON FRANCISCO VIANA SANTOS</span>
-            </div>
-            <div class="integrante">
-                <img src="imagens/alissin.png" alt="Alisson">
-                <span>ALISSON RICADY MORAIS GUIMÃRAES</span>
-            </div>
-            <div class="integrante">
-                <img src="imagens/GALAS.PNG" alt="Felipe">
-                <span>FELIPE PEREIRA DE LIMA</span>
-            </div>
-        </div>
-    </div>
-</body>
-
+    
 </html>
 3. Definindo Variáveis com scss/_variaveis.scss
 Crie o arquivo _variaveis.scss dentro da pasta scss/. Este arquivo, identificado pelo underline inicial, é um parcial Sass e não será compilado diretamente para CSS. Ele serve para centralizar a definição de valores reutilizáveis, como cores e fontes, facilitando a consistência e manutenção do design.
